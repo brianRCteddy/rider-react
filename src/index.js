@@ -17,6 +17,14 @@ class App extends Component {
 			}
 		);
 	}
+	componentDidMount() {
+		console.log('index.js - componentDidMount = component is rendered');
+	}
+
+	componentDidUpdate() {
+		console.log('index.js - ComponentDidUpdate - component is re-rendered');
+	}
+
 	render() {
 		if (this.state.errorMessage && !this.state.latitude) {
 			return <div>Error: {this.state.errorMessage}</div>;
