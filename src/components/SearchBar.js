@@ -12,8 +12,6 @@ class SearchBar extends Component {
 	submitFormHandler = (event) => {
 		event.preventDefault();
 
-		//Make sure we call
-		//callback from component
 		this.props.onSearchSubmit(this.state.term);
 	};
 
